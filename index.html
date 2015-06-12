@@ -13,64 +13,69 @@
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<section class="introduction">
+	<section id="introduction">
 		<h1 class="title">Como funciona o Programa</h1>
 		<h1 class="conference">#AgileBR</h1>
 
 		<p>Fazer o Programa da Agile Brazil é uma jornada que se inicia no dia seguinte à Agile Brazil anterior e termina cerca de um mês após o evento acontecer. É um longo caminho e muitos voluntários da comunidade estão envolvidos nele.</p>
 	</section>
 
-	<section class="whoAreWe">
+	<section id="whoAreWe">
 		<h2>Quem somos?</h2>
-		<ul class="personas">
+		<ul id="personas">
 			<li class="chairs">
 				<h3>Chairs de Programa</h3>
 				<p>Responsáveis por coordenar e facilitar atividades e interagir com outros organizadores.</p>
 			</li>
 			<li class="trackLeads">
-				<h3>Coordenadores de trilhas</h3>
+				<h3>Track Leads</h3>
 				<p>Em pares, consideram as revisões das propostas e decidem o que será aprovado.</p>
 			</li>
 			<li class="committee">
 				<h3>Membros do comitê</h3>
-				<p>Definem trilhas, formatos de sessão, convidados e regras do Programa.</p>
+				<p>Definem o formato do Programa: trilhas, tipos de sessão, convidados, keynotes e regras.</p>
 			</li>
 			<li class="reviewers">
 				<h3>Revisores de propostas</h3>
-				<p>Lêem propostas submetidas e dão feedbacks pra autores e coordenadores de trilhas.</p>
+				<p>Lêem propostas de sessão submetidas e dão feedbacks pra autores e coordenadores de trilhas.</p>
 			</li>
 		</ul>
 	</section>
-	<section>
-		<h2>Antes de abrir submissões</h2>
-		<p>Em preparação à abertura das submissões, a estrutura do Programa precisa ser definida pelo comitê.</p>
-		<ul class="definitions">
-			<li class="tracks">
-				<h3>Trilhas</h3>
+	<section id="timelineEvents">
+		<h2>Antes de abrir submissões...</h2>
+		<ul>
+			<li class="chairs">
+				<h3>Convite do comitê</h3>
+				<div>
+					<p>Pessoas que compuseram o comitê de Programa no ano anterior, revisores que se destacaram e participantes que demonstraram bastante interesse em ajudar no Programa da próxima conferência são convidados para compor o comitê de Programa.</p>
+				</div>
+			</li>			
+			<li class="committee">
+				<h3>Definição das trilhas</h3>
 				<div>
 					<p>São as grandes áreas de conhecimento que esperamos ter no programa da Agile Brazil.</p>
 
 					<p>Número e títulos de trilhas são rediscutidos todo ano porque servem, também, como forma de incentivar propostas de temas que os membros do comitê percebem como interessantes para o público.</p>
 				</div>
 			</li>
-			<li class="types">
-				<h3>Tipos de sessão</h3>
+			<li class="committee">
+				<h3>Definição dos tipos de sessão</h3>
 				<div>
 					<p>São os formatos de sessão que esperamos ver na conferência.</p>
 
 					<p>Muitos deles são usados para submissões: palestra, relato de experiência, mão na massa são exemplos. Outros, como keynote e open spaces, não são submetidos mas farão parte da conferência!</p>
 				</div>
 			</li>
-			<li class="rules">
-				<h3>Regras de submissão</h3>
+			<li class="committee">
+				<h3>Definição das regras de submissão</h3>
 				<div>
 					<p>Seja por questões de viabilidade financeira, ou para dar espaço para novos nomes surgirem, também as revisamos todo ano.</p>
 
 					<p>Por exemplo, não permitimos que um mesmo palestrante fale em mais do que duas sessões, nem que um mesmo conjunto de autores se repita em duas sessões.</p>
 				</div>
 			</li>
-			<li class="dates">
-				<h3>Calendário</h3>
+			<li class="committee">
+				<h3>Definição do calendário</h3>
 				<div>
 					<p>A definição das datas para cada atividade, desde a abertura de submissão até a publicação da grade no site.</p>
 
@@ -79,5 +84,16 @@
 			</li>
 		</ul>
 	</section>
+
+	<script type="text/javascript">
+		var list = document.querySelector("#timelineEvents ul");
+		list.addEventListener("click", function(event) {
+			var clicked = event.target;
+			if (clicked.tagName == "H3") {
+				clicked.nextElementSibling.classList.toggle("isActive");
+			}
+		});
+	</script>
+
 </body>
 </html>

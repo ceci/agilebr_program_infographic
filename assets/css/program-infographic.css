@@ -1,61 +1,78 @@
-/* colors: http://paletton.com/#uid=73v0u0kslJghiQamYMfG8GDEWqM */
+/* colors: http://paletton.com/#uid=73v1g0kslJgb1SOkGM9HZz3JJmT */
 
+/* tags */
 body {
-	background-color: #2288cc;
+	background-color: #2289cc;
 	margin: 1em auto;
-	width: 90%;
+	width: 1200px;
 }
 h1, section {
 	padding: 1rem;
 }
 section h2 {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 3em;
 	margin-bottom: 0.5em;
 }
-.introduction {
-	color: #065588;
+
+/* personas */
+.chairs {
+	background-color: #066BAC;
+	border: 1px solid #044875;
 }
-.introduction h1 {
+.trackLeads {
+	background-color: #00BE4D;
+	border: 1px solid #008335;
+}
+.committee {
+	background-color: #FF8E00;
+	border: 1px solid #B66600;
+}
+.reviewers {
+	background-color: #FF3100;
+	border: 1px solid #B62300;
+}
+
+/* sections */
+#introduction {
+	color: #044875;
+}
+#introduction h1 {
 	display: inline-block;
 	font-family: 'Cabin Sketch', cursive;
 }
-.introduction .title {
+#introduction .title {
 	text-align: left;
 	font-size: 4.5em;
 }
-.introduction .conference {
-	color: #ffdb75;
+#introduction .conference {
+	color: #F5FE1D;
 	font-size: 4em;
 	text-align: right;
 	width: 3em;
 }
-.introduction p {
-	background-color: #6eb3e0;
+#introduction p {
+	background-color: #53A2D4;
 	border-radius: 2em;
 	font-size: 2em;
 	padding: 1em;
 }
-.whoAreWe h2 {
-	color: #ffdb75;
-	font-family: 'Cabin Sketch', cursive;
-	font-size: 3em;
+
+#whoAreWe h2 {
+	color: #9CCAE7;
 }
-.whoAreWe .personas {
+#personas {
 	text-align: center;
 }
-.whoAreWe .personas li {
-	background-color: #ffae48;
-	border: 1px solid #d57700;
+#personas li {
 	color: #333;
 	display: inline-block;
 	margin: 4em 0;
 	padding: 1em;
-	max-width: 16em;
+	width: 20%;
 }
-.whoAreWe .personas li::before {
-	background-color: #ffae48;
-	border: 18px solid #d57700;
+#personas li::before {
 	border-radius: 50%;
-	color: #d57700;
 	display: inline-block;
 	font-size: 5em;
 	font-weight: bold;
@@ -64,20 +81,85 @@ section h2 {
 	width: 120px;
 	transform: translateY(-60%);
 }
-.whoAreWe .personas .chairs::before {
+#personas .chairs::before {
+	background-color: #066BAC;
+	border: 18px solid #044875;
+	color: #044875;
 	content: "3";
 }
-.whoAreWe .personas .trackLeads::before {
+.trackLeads::before {
+	background-color: #00BE4D;
+	border: 18px solid #008335;
+	color: #008335;
 	content: "12";
 }
-.whoAreWe .personas .committee::before {
+#personas .committee::before {
+	background-color: #FF8E00;
+	border: 18px solid #B66600;
+	color: #B66600;
 	content: "20";
 }
-.whoAreWe .personas .reviewers::before {
+#personas .reviewers::before {
+	background-color: #FF3100;
+	border: 18px solid #B62300;
+	color: #B62300;
 	content: "42";
 }
-
-.whoAreWe .personas li h3 {
+#personas li h3 {
 	font-size: 1.25em;
 	margin: -4em 0 1em;
+}
+
+#timelineEvents h2 {
+	color: #9ccae7;
+}
+#timelineEvents li {
+	display: block;
+	margin-top: 1em;
+	width: 18em;
+}
+#timelineEvents h3 {
+	color: #FFF;
+	cursor: pointer;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 1.8em;
+	padding: 0.5em;
+	text-align: center;
+}
+#timelineEvents {
+	color: #224;
+	display: block;
+	padding: 1em 0 1em 1em;
+}
+#timelineEvents p {
+	display: none;
+}
+#timelineEvents .isActive p {
+	display: block;
+	padding: 1em;
+}
+#timelineEvents .chairs h3 {
+	background-color: #044875;
+}
+#timelineEvents .trackLeads h3 {
+	background-color: #008335;
+}
+#timelineEvents .committee h3 {
+	background-color: #B66600;
+}
+#timelineEvents .reviewers h3 {
+	background-color: #B62300;
+}
+
+li.chairs {
+	margin-left: 0;
+}
+li.trackLeads {
+	margin-left: 25%;
+}
+li.committee {
+	margin-left: 50%;
+}
+li.reviewers {
+	margin-left: 75%;
 }
