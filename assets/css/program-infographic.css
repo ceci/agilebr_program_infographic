@@ -112,11 +112,6 @@ section h2 {
 #timelineEvents {
 	color: #224;
 	display: block;
-}
-#timelineEvents h2 {
-	color: #9ccae7;
-}
-#timelineEvents ul {
 	background: linear-gradient(
 		to right,
 		rgba(0, 0, 0, 0),
@@ -138,6 +133,13 @@ section h2 {
 		rgba(0, 0, 0, 0) 86%,
 		rgba(0, 0, 0, 0)
 	);
+	margin-top: -4em;
+	padding-top: 4em;
+}
+#timelineEvents h2 {
+	color: #9ccae7;
+}
+#timelineEvents ul {
 	padding: 0 3em;
 }
 #timelineEvents li {
