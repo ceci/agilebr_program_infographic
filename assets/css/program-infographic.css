@@ -16,6 +16,9 @@ section h2 {
 	font-size: 3em;
 	margin-bottom: 0.5em;
 }
+a {
+	color: #FFFFFF;
+}
 
 /* personas */
 .chairs {
@@ -48,10 +51,13 @@ section h2 {
 	font-size: 4.5em;
 }
 #introduction .conference {
-	color: #F5FE1D;
 	font-size: 4em;
 	text-align: right;
 	width: 3em;
+}
+#introduction .conference a {
+	color: #F5FE1D;
+	text-decoration: none;
 }
 #introduction p, #conclusion p {
 	background-color: #53A2D4;

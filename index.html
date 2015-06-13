@@ -16,13 +16,13 @@
 	<main>
 		<section id="introduction">
 			<h1 class="title">Como funciona o Programa</h1>
-			<h1 class="conference">#AgileBR</h1>
+			<h1 class="conference"><a href="http://agilebrazil.com">#AgileBR</a></h1>
 
 			<p>Fazer o Programa da Agile Brazil é uma jornada que se inicia no dia seguinte à Agile Brazil anterior e termina cerca de um mês após o evento acontecer. É um longo caminho e muitos voluntários da comunidade estão envolvidos nele.</p>
 		</section>
 
 		<section id="whoAreWe">
-			<h2>Quem somos?</h2>
+			<h2>Quem somos e o que fazemos?</h2>
 			<ul id="personas">
 				<li class="chairs">
 					<h3>Chairs de Programa</h3>
@@ -54,7 +54,7 @@
 				<li class="committee">
 					<h3>Definição das trilhas</h3>
 					<div>
-						<p>São as grandes áreas de conhecimento que esperamos ter no programa da Agile Brazil.</p>
+						<p>São as grandes áreas de conhecimento que esperamos ter no programa da Agile Brazil. Conheça as <a href="https://submissoes.agilebrazil.com/2015/tracks">trilhas de 2015</a>!</p>
 
 						<p>Número e títulos de trilhas são rediscutidos todo ano porque servem, também, como forma de incentivar propostas de temas que os membros do comitê percebem como interessantes para o público.</p>
 					</div>
@@ -64,15 +64,23 @@
 					<div>
 						<p>São os formatos de sessão que esperamos ver na conferência.</p>
 
-						<p>Muitos deles são usados para submissões: palestra, relato de experiência, mão na massa são exemplos. Outros, como keynote e open spaces, não são submetidos mas farão parte da conferência!</p>
+						<p>Muitos deles são <a href="https://submissoes.agilebrazil.com/2015/session_types">usados para submissões</a>: palestra, relato de experiência, mão na massa são exemplos. Outros, como keynote e open spaces, não são submetidos mas farão parte da conferência!</p>
 					</div>
 				</li>
 				<li class="committee">
-					<h3>Definição das regras de submissão</h3>
+					<h3>Definição dos perfis de audiência</h3>
+					<div>
+						<p>Para facilitar a escolha das sessões pelo público da conferência, autores precisam classificar a audiência esperada em níveis, além de descrever os pré-requisitos.</p>
+
+						<p>Em 2015 estamos tentando algo novo: em vez de iniciante, praticante e experiente, <a href="https://submissoes.agilebrazil.com/2015/audience_levels">temos 4 níveis baseados na escala de Dreyfus</a>.</p>
+					</div>
+				</li>
+				<li class="committee">
+					<h3>Definição de regras de submissão</h3>
 					<div>
 						<p>Seja por questões de viabilidade financeira, ou para dar espaço para novos nomes surgirem, também as revisamos todo ano.</p>
 
-						<p>Por exemplo, não permitimos que um mesmo palestrante fale em mais do que duas sessões, nem que um mesmo conjunto de autores se repita em duas sessões.</p>
+						<p>Por exemplo, não permitimos que um mesmo palestrante fale em mais do que duas sessões, nem que um mesmo conjunto de autores se repita em duas sessões. Conheça todas as <a href="https://submissoes.agilebrazil.com/2015/guidelines">regras de 2015</a>!</p>
 					</div>
 				</li>
 				<li class="committee">
@@ -201,9 +209,11 @@
 		</section>
 	</main>
 	<footer>
-		<h3>Ainda está com dúvidas? Fala com a gente!</h3>
+		<h3>Dúvidas ou sugestões? Quer fazer parte?</h3>
+		<h3>Fala com a gente!</h3>
 		<span>programa@agilebrazil.com</span>
 	</footer>
+
 	<script type="text/javascript">
 		var list = document.querySelectorAll("#timelineEvents ul");
 		var numberOfLists = list.length - 1;
@@ -215,6 +225,10 @@
 					clicked.nextElementSibling.classList.toggle("isActive");
 				}
 			})
+		}
+		var links = document.getElementsByTagName("a");
+		for (var i = links.length - 1; i >= 0; i--) {
+			links[i].target = "_blank";
 		}
 	</script>
 </body>
