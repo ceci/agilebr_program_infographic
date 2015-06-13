@@ -207,6 +207,7 @@ footer {
 	color: #9CCAE7;
 	margin-top: 3em;
 	padding: 2em 6em 4em;
+	min-width: 1200px;
 	width: 100%;
 }
 footer h3 {
