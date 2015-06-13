@@ -3,6 +3,8 @@
 /* tags */
 body {
 	background-color: #2289cc;
+}
+main {
 	margin: 1em auto;
 	width: 1200px;
 }
@@ -34,14 +36,14 @@ section h2 {
 }
 
 /* sections */
-#introduction {
+#introduction, #conclusion {
 	color: #044875;
 }
-#introduction h1 {
+#introduction h1, #conclusion h1 {
 	display: inline-block;
 	font-family: 'Cabin Sketch', cursive;
 }
-#introduction .title {
+#introduction .title, #conclusion .title {
 	text-align: left;
 	font-size: 4.5em;
 }
@@ -51,15 +53,17 @@ section h2 {
 	text-align: right;
 	width: 3em;
 }
-#introduction p {
+#introduction p, #conclusion p {
 	background-color: #53A2D4;
 	border-radius: 2em;
 	font-size: 2em;
 	padding: 1em;
 }
+
 #whoAreWe h2 {
 	color: #9CCAE7;
 }
+
 #personas {
 	text-align: center;
 }
@@ -135,7 +139,6 @@ section h2 {
 	);
 	margin-top: -4em;
 	padding-top: 4em;
-	padding-bottom: 4em;
 }
 #timelineEvents h2 {
 	background-color: rgba(156,202,231, 0.3);
@@ -190,4 +193,25 @@ li.committee {
 }
 li.reviewers {
 	margin-left: 75%;
+}
+
+footer {
+	background-color: #044875;
+	box-sizing: border-box;
+	color: #9CCAE7;
+	margin-top: 3em;
+	padding: 2em 6em 4em;
+	width: 100%;
+}
+footer h3 {
+	display: inline-block;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 2.5em;
+	width: 70%;
+}
+footer span {
+	display: inline-block;
+	font-size: 1.5em;
+	text-align: right;
+	width: 28%;
 }
