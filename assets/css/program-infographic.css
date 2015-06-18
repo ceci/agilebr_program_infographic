@@ -68,14 +68,14 @@ a {
 }
 
 #whoAreWe h2 {
-	color: #9CCAE7;
+	color: rgba(255, 255, 255, 0.9);
 }
 
 #personas {
 	text-align: center;
 }
 #personas li {
-	color: #000;
+	color: rgba(255, 255, 255, 0.8);
 	display: inline-block;
 	margin: 4em 0;
 	padding: 1em;
@@ -121,7 +121,7 @@ a {
 }
 
 #timelineEvents {
-	color: #224;
+	color: rgba(255, 255, 255, 0.9);
 	display: block;
 	background: linear-gradient(
 		to right,
@@ -175,6 +175,7 @@ a {
 #timelineEvents .isActive p {
 	display: block;
 	padding: 1em;
+	line-height: 1.4em;
 }
 #timelineEvents .chairs h3 {
 	background-color: #044875;
